@@ -20,6 +20,20 @@
         <jelastic.context>gameoflife</jelastic.context>
         <jelastic.environment>wakaleo</jelastic.environment>
     </properties>
+    
+    distributionManagement>
+    <repository>
+    <id>releases</id>
+    <!-- CHANGE HERE by your team nexus server -->
+    <url>http://13.58.70.207:8081/repository/maven-releases/</url>
+  </repository>
+  <snapshotRepository>
+    <id>snapshots</id>
+    <!-- CHANGE HERE by your team nexus server -->
+    <url>http://13.58.70.207:8081/repository/maven-snapshots/</url>
+   </snapshotRepository>
+</distributionManagement>
+
 
     <scm>
         <connection>scm:git:git@github.com:${github.account}/game-of-life.git</connection>
